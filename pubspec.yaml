@@ -36,7 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   # A simple way to access state from anywhere in your application while robust and testable.
-  flutter_riverpod: ^1.0.4
+  flutter_riverpod: ^1.0.3
 
   # Small, easy to use and extensible logger which prints beautiful logs.
   logger: ^1.1.0
@@ -59,9 +59,6 @@ dependencies:
   # Flutter Secure Storage provides API to store data in secure storage. Keychain is used in iOS, KeyStore based solution is used in Android.
   flutter_secure_storage: ^5.0.2
 
-  # An SVG rendering and widget library for Flutter, which allows painting and displaying Scalable Vector Graphics 1.1 files.
-  flutter_svg: ^1.1.1+1
-
   # A Dart mock library which simplifies mocking with null safety support and no manual mocks or code generation.
   mocktail: ^0.3.0
 
@@ -72,10 +69,6 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   build_runner:
-  flutter_gen_runner:
-  freezed: ^2.1.0+1
-  retrofit_generator: ^4.0.2
-  json_serializable: ^6.3.1
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
