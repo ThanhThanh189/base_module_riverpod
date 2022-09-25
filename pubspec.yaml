@@ -35,9 +35,47 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
+  # A simple way to access state from anywhere in your application while robust and testable.
+  flutter_riverpod: ^1.0.4
+
+  # Small, easy to use and extensible logger which prints beautiful logs.
+  logger: ^1.1.0
+
+  # Annotations for the freezed code-generator.
+  freezed_annotation: ^2.1.0
+
+  # Classes and helper functions that support JSON code generation via the `json_serializable` package.
+  json_annotation: ^4.6.0
+
+  # An dio client generator using source_gen and inspired by Chopper and Retrofit.
+  retrofit: ^3.0.1+1
+
+  # A powerful Http client for Dart, which supports Interceptors, FormData, Request Cancellation, File Downloading, Timeout etc.
+  dio: ^4.0.6
+
+  # A Dio interceptor that logs network calls in a pretty, easy to read format.
+  pretty_dio_logger: ^1.1.1
+
+  # Flutter Secure Storage provides API to store data in secure storage. Keychain is used in iOS, KeyStore based solution is used in Android.
+  flutter_secure_storage: ^5.0.2
+
+  # An SVG rendering and widget library for Flutter, which allows painting and displaying Scalable Vector Graphics 1.1 files.
+  flutter_svg: ^1.1.1+1
+
+  # A Dart mock library which simplifies mocking with null safety support and no manual mocks or code generation.
+  mocktail: ^0.3.0
+
+  # Flutter plugin for reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android.
+  shared_preferences: ^2.0.15
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  build_runner:
+  flutter_gen_runner:
+  freezed: ^2.1.0+1
+  retrofit_generator: ^4.0.2
+  json_serializable: ^6.3.1
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
