@@ -36,7 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   # A simple way to access state from anywhere in your application while robust and testable.
-  flutter_riverpod: ^1.0.3
+  flutter_riverpod: ^1.0.4
 
   # Small, easy to use and extensible logger which prints beautiful logs.
   logger: ^1.1.0
@@ -69,6 +69,10 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   build_runner:
+  flutter_gen_runner:
+  freezed: ^2.1.0+1
+  retrofit_generator: ^4.0.2
+  json_serializable: ^6.3.1
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
