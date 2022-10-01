@@ -15,21 +15,33 @@ class SplashView extends ConsumerStatefulWidget {
 
 class _SplashViewState extends ConsumerState<SplashView> {
   @override
+  void initState() {
+    super.initState();
+    Future.delayed(const Duration(seconds: 2), () async {
+      await ref.read(_provider.notifier).init(onNextHome: () {
+        ref
+            .read(appNavigatorProvider)
+            .navigateTo(AppRoutes.login, shouldClearStack: true);
+      });
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber,
+      // backgroundColor: Colors.amber,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Center(
-            child: Text('Hello development splash'),
+        children: const [
+          Center(
+            child: Text(
+              'SPLASH',
+              style: TextStyle(
+                  color: Colors.blue,
+                  fontSize: 26,
+                  fontWeight: FontWeight.bold),
+            ),
           ),
-          TextButton(
-              onPressed: () {
-                print('click');
-                ref.watch(appNavigatorProvider).navigateTo(AppRoutes.login);
-              },
-              child: const Text('Click')),
         ],
       ),
     );

@@ -20,16 +20,16 @@ class AppFlavor {
 class AppFlavorValue {
   static final AppFlavor development = AppFlavor(
     appFlavorType: AppFlavorType.development,
-    apiConfig: ApiConfig(""),
+    apiConfig: ApiConfig('https://reqres.in'),
   );
 
   static final AppFlavor staging = AppFlavor(
     appFlavorType: AppFlavorType.staging,
-    apiConfig: ApiConfig(""),
+    apiConfig: ApiConfig('https://reqres.in'),
   );
 
   static final AppFlavor production = AppFlavor(
     appFlavorType: AppFlavorType.production,
-    apiConfig: ApiConfig(""),
+    apiConfig: ApiConfig('https://reqres.in'),
   );
 }
