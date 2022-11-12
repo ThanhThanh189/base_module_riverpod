@@ -17,11 +17,13 @@ abstract class ApiClient {
 
   @POST(ApiPaths.login)
   Future<ApiLoginResponse> login(
-    @Body() ApiLoginRequest apiLoginRequest,
-  );
+    @Body() ApiLoginRequest apiLoginRequest, {
+    @Header('Content-Type') String contentType = 'application/json',
+  });
 
   @POST(ApiPaths.register)
   Future<ApiRegisterResponse> register(
-    @Body() ApiRegisterRequest apiRegisterRequest,
-  );
+    @Body() ApiRegisterRequest apiRegisterRequest, {
+    @Header('Content-Type') String contentType = 'application/json',
+  });
 }

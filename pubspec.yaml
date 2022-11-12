@@ -65,6 +65,9 @@ dependencies:
   # Flutter plugin for reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android.
   shared_preferences: ^2.0.15
 
+  #http:
+  http: ^0.13.5
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

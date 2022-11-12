@@ -1,14 +1,38 @@
+import 'package:base_module_riverpod/domain/providers/login_use_case_provider.dart';
+import 'package:base_module_riverpod/presentation/features/login/login_state.dart';
+import 'package:base_module_riverpod/presentation/features/login/login_view_model.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class LoginView extends StatelessWidget {
-  const LoginView({Key? key}) : super(key: key);
+final _provider = StateNotifierProvider.autoDispose<LoginViewModel, LoginState>(
+    (ref) => LoginViewModel(loginUseCase: ref.watch(loginUseCaseProvider)));
+
+class LoginView extends ConsumerStatefulWidget {
+  const LoginView({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  ConsumerState createState() => _LoginViewState();
+}
+
+class _LoginViewState extends ConsumerState<LoginView> {
+  @override
+  void initState() {
+    super.initState();
+
+    Future.delayed(Duration.zero, () async {
+      await ref.read(_provider.notifier).init();
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    final token = ref.watch(_provider).token;
+    return Scaffold(
       backgroundColor: Colors.blue,
       body: Center(
-        child: Text('Hello development splash'),
+        child: Text(token.isEmpty ? 'No data' : token),
       ),
     );
   }
