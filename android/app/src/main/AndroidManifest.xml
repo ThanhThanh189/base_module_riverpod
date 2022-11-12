@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.base_module_riverpod">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="base_module_riverpod"
         android:name="${applicationName}"

@@ -5,8 +5,8 @@ part 'login_state.freezed.dart';
 @freezed
 class LoginState with _$LoginState {
   const factory LoginState({
-    required String email,
+    required String token,
   }) = _LoginState;
 
-  factory LoginState.initial() => const LoginState(email: '');
+  factory LoginState.initial() => const LoginState(token: '');
 }
