@@ -16,11 +16,8 @@ class UserRepositoryImplement implements UserRepository {
 
   @override
   Future<LoginResponse> login(LoginRequest loginRequest) async {
-
-    print('apiLoginResponse Imp:${ApiLoginRequestMapper().map(loginRequest)}');
     final apiLoginResponse =
         await _apiClient.login(ApiLoginRequestMapper().map(loginRequest));
-    print('apiLoginResponse Imp2:$apiLoginResponse');
     return ApiLoginResponseMapper().map(apiLoginResponse);
   }
 
