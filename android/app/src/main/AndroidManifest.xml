@@ -2,8 +2,7 @@
     package="com.example.base_module_riverpod">
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="base_module_riverpod"
-        android:name="${applicationName}"
+        android:label="@string/app_name"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
