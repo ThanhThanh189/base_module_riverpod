@@ -9,7 +9,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../app.dart';
 
 void mainCommon(AppFlavor appFlavor) {
-  WidgetsFlutterBinding.ensureInitialized();
   Future<void> startApp() async {
     final container = ProviderContainer(
       overrides: [
@@ -27,8 +26,10 @@ void mainCommon(AppFlavor appFlavor) {
     );
   }
 
+  
   runZonedGuarded(
     () {
+      WidgetsFlutterBinding.ensureInitialized();
       startApp();
     },
     (error, stackTrace) {},

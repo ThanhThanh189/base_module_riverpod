@@ -28,11 +28,11 @@ class _SplashViewState extends ConsumerState<SplashView> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       // backgroundColor: Colors.amber,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
+        children: [
           Center(
             child: Text(
               'SPLASH',
