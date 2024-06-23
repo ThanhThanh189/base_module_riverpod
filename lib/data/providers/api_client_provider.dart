@@ -9,7 +9,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 final apiClientProvider = Provider<ApiClient>((ref) {
   final appFlavor = ref.watch(appFlavorProvider);
   final dio = Dio();
-  dio.interceptors.add(AuthInterceptor());
+  dio.interceptors.add(AuthInterceptor(reader: ref.read));
 
   if (kDebugMode) {
     dio.interceptors.add(

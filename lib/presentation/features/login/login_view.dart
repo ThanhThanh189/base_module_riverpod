@@ -30,8 +30,9 @@ class _LoginViewState extends ConsumerState<LoginView> {
   Widget build(BuildContext context) {
     final token = ref.watch(_provider).token;
     return Scaffold(
+      backgroundColor: Colors.blue,
       body: Center(
-        child: Text(token.isEmpty ? 'Base Module' : token),
+        child: Text(token.isEmpty ? 'No data' : token),
       ),
     );
   }

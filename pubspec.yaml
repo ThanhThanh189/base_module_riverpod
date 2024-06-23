@@ -36,10 +36,10 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   # A simple way to access state from anywhere in your application while robust and testable.
-  flutter_riverpod: ^2.5.1
+  flutter_riverpod: ^1.0.4
 
   # Small, easy to use and extensible logger which prints beautiful logs.
-  logger: ^2.3.0
+  logger: ^1.1.0
 
   # Annotations for the freezed code-generator.
   freezed_annotation: ^2.1.0
@@ -48,33 +48,33 @@ dependencies:
   json_annotation: ^4.6.0
 
   # An dio client generator using source_gen and inspired by Chopper and Retrofit.
-  retrofit: ^4.1.0
+  retrofit: ^3.0.1+1
 
   # A powerful Http client for Dart, which supports Interceptors, FormData, Request Cancellation, File Downloading, Timeout etc.
-  dio: ^5.4.3+1
+  dio: ^4.0.6
 
   # A Dio interceptor that logs network calls in a pretty, easy to read format.
   pretty_dio_logger: ^1.1.1
 
   # Flutter Secure Storage provides API to store data in secure storage. Keychain is used in iOS, KeyStore based solution is used in Android.
-  flutter_secure_storage: ^9.2.2
+  flutter_secure_storage: ^5.0.2
 
   # A Dart mock library which simplifies mocking with null safety support and no manual mocks or code generation.
-  mocktail: ^1.0.4
+  mocktail: ^0.3.0
 
   # Flutter plugin for reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android.
   shared_preferences: ^2.0.15
 
   #http:
-  http: ^1.2.1
+  http: ^0.13.5
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   build_runner:
   flutter_gen_runner:
-  freezed: ^2.5.2
-  retrofit_generator: ^8.1.0
+  freezed: ^2.1.0+1
+  retrofit_generator: ^4.0.2
   json_serializable: ^6.3.1
 
   # The "flutter_lints" package below contains a set of recommended lints to
@@ -82,7 +82,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^4.0.0
+  flutter_lints: ^1.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

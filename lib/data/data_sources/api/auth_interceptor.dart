@@ -1,24 +1,28 @@
+import 'dart:math';
+
 import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class AuthInterceptor implements InterceptorsWrapper {
-  AuthInterceptor() : super();
+  AuthInterceptor({required this.reader}) : super();
+
+  final Reader reader;
 
   @override
-  void onError(DioException err, ErrorInterceptorHandler handler) {
-    if (kDebugMode) {
-      debugPrint(err.toString());
-    }
-    handler.next(err);
+  void onError(DioError err, ErrorInterceptorHandler handler) {
+    print('err: $handler');
   }
 
   @override
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
-    handler.next(options);
+    print('''\n
+    baseUrl: ${options.baseUrl}
+    headers: ${options.headers}
+    ''');
   }
 
   @override
   void onResponse(Response response, ResponseInterceptorHandler handler) {
-    handler.next(response);
+    print('err: $response');
   }
 }
