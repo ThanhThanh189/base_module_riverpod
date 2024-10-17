@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "940122865669",
+    "project_id": "facebook-login-9426d",
+    "storage_bucket": "facebook-login-9426d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940122865669:android:144a2f4af4c1ae63101c6c",
+        "android_client_info": {
+          "package_name": "com.example.base_module_riverpod"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpUOTYpfyAs3mSZNsR8i4jcydBupNhWR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940122865669:android:2a5c9e3e1903e925101c6c",
+        "android_client_info": {
+          "package_name": "com.example.base_module_riverpoddev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpUOTYpfyAs3mSZNsR8i4jcydBupNhWR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
