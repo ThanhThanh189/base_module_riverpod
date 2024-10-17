@@ -4,6 +4,8 @@ import 'package:base_module_riverpod/presentation/features/login/login_view_mode
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../data/services/auth_facebook_sevices/auth_facebook_sevices.dart';
+
 final _provider = StateNotifierProvider.autoDispose<LoginViewModel, LoginState>(
     (ref) => LoginViewModel(loginUseCase: ref.watch(loginUseCaseProvider)));
 
@@ -31,7 +33,12 @@ class _LoginViewState extends ConsumerState<LoginView> {
     final token = ref.watch(_provider).token;
     return Scaffold(
       body: Center(
-        child: Text(token.isEmpty ? 'Base Module' : token),
+        child: TextButton(
+          child: const Text('Login'),
+          onPressed: () async {
+            final value = await signInWithFacebook();
+          },
+        ),
       ),
     );
   }
